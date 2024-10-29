@@ -1,0 +1,42 @@
+{
+  // 开启自动修复
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue",
+    "markdown",
+    "json",
+    "jsonc"
+  ],
+  // 保存的时候自动格式化
+  "editor.formatOnSave": true,
+  // 默认格式化工具选择prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // 配置该项，新建文件时默认就是space：2
+  "editor.tabSize": 2,
+  // stylelint校验的文件格式
+  "stylelint.validate": ["css", "less", "vue", "html", "scss", "sass"],
+  "cSpell.words": ["composables", "oper", "sider", "yapi"],
+  "i18n-ally.localesPaths": ["src/i18n"],
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "makefile.configureOnOpen": false,
+  "[scss]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  }
+}

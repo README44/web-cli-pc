@@ -1,0 +1,16 @@
+@use 'sass:map';
+/* 只需要重写你需要的即可 */
+@forward "element-plus/theme-chalk/src/common/var.scss" with ($font-family: ('': "Poppins"
+  ),
+  $colors: ("primary": ("base": #409EFF)),
+  $bg-color: ("page": #F1F2EF));
+// // 如果只是按需导入，则可以忽略以下内容。
+// // 如果你想导入所有样式:
+@use "element-plus/theme-chalk/src/index.scss" as *;
+
+:root {
+  --el-text-color-regular: #1B1B1B;
+  --el-header-border-color: #e4e7ed;
+  --el-aside-border-color: #e4e7ed;
+  --el-menu-active-bg-color: #ecf5ff;
+}
